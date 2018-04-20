@@ -1,0 +1,19 @@
+{
+  "name": "node_spider",
+  "version": "1.0.0",
+  "description": "使用node原生模块+jsdom模块，实现http和https通用的爬虫工具",
+  "main": "spider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/pengguojin/node_spider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^11.8.0"
+  }
+}
