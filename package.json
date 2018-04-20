@@ -14,10 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-<<<<<<< HEAD
     "gbk": "^0.1.0",
-=======
->>>>>>> 4f4fe66b8e382e3cc3964c0eacca361cef29503d
     "jsdom": "^11.8.0"
   }
 }
