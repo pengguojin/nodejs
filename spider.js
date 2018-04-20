@@ -21,7 +21,6 @@ let req = http.request('http://www.baidu.com', res=>{
         });
     } else {
         console.log('出错', res.statusCode);
-        
     }
     
 });
