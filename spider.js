@@ -16,7 +16,6 @@ let req = http.request('http://www.baidu.com', res=>{
                     console.log('写入失败');
                 } else {
                     console.log('成功');
-                    
                 }
             });
         });
