@@ -67,7 +67,7 @@ module.exports=async function request(url, reqHeaders){
         while(1){
             let {status, body, headers}=await requestUrl(url, reqHeaders);
             if(status==200){
-                return { status, body }
+                return { body, headers }
             } else {
                 assert(status==301 || status==302);
                 assert(headers.location);

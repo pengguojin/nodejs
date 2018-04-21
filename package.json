@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "gbk": "^0.1.0",
-    "jsdom": "^11.8.0"
+    "jsdom": "^11.8.0",
+    "mysql-pro": "^1.0.1"
   }
 }
