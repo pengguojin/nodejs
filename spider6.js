@@ -42,6 +42,7 @@ function updateData(){
 }
 
 (async()=> {
+<<<<<<< HEAD
     //1、爬取网站的内容
     let { body, headers }=await request('http://ibahu.com/');
     //2、通过jsdom解析网站内容
@@ -50,4 +51,10 @@ function updateData(){
     fs.writeFile('tmp/ibahu.html', body.toString(), err=>{});
     //4、插入数据库
     // updateData(json);
+=======
+    let { body, headers }=await request('https://shouji.tmall.com/');
+    let json = indexParser(body);
+    // fs.writeFile('tmp/tmall_shouji.html', body.toString(), err=>{});
+    updateData(json);
+>>>>>>> a4526f988aafaa95fcfbdcf9727f9ae15585fb8e
 })();
