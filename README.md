@@ -141,24 +141,24 @@ if (urlObj.protocol == 'http:') {
 ```     
 
 - 2、在http的request方法，有一个参数是可以传入请求头信息的，改写下，如下：
-```javascript
-// 请求头信息，获取的方法，下面解析
-var resHeader = {
-    "Accept": "application/json, text/javascript, */*; q=0.01",
-    "Accept-Encoding": "gzip, deflate",
-    "Accept-Language": "zh-CN,zh;q=0.9",
-    "Connection": "keep-alive",
-}
+    ```javascript
+    /*请求头信息，获取的方法，下面解析*/
+    var resHeader = {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Connection": "keep-alive",
+    };
 
-let req=httpMod.request({
-    //urlObj对应上面解析的
-      host: urlObj.host, // host表示url地址
-      path: urlObj.path, //path表示请求的路径
-      headers: resHeader    // 请求头信息
-    }, res=>{
-        // 请求内容
-    });
-```
+    let req=httpMod.request({
+        /*urlObj对应上面解析的*/
+        host: urlObj.host, /*host表示url地址*/
+        path: urlObj.path, /*path表示请求的路径*/
+        headers: resHeader /*请求头信息*/
+        }, res=>{
+            /*请求内容*/
+        });
+    ```
 
 - 3、把原本普通的方法改成ES7的同步方法    
     1. 既然使用了async，那个把上面的代码放进Promise里面使用  
