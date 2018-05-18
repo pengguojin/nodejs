@@ -1,14 +1,22 @@
 # 原生node和jsdom实现爬虫
 
 #### 项目介绍
-使用node原生模块+jsdom模块，实现http和https通用的爬虫工具
+使用node原生模块+jsdom/cheerio模块，实现http和https通用的爬虫工具       
+目录real不定时更新爬成功的网站      
+目录libs是封装好的请求方法
 
 #### 软件架构      
 原生node模块：
 - 1、http模块
 - 2、https模块
 - 3、fs模块
-- 4、path模块       
+- 4、path模块    
+- 5、assert模块
+- 6、url模块
+第三方模块
+- jsdom
+- cheerio
+
 
 第三方模块
 - 5、jsdom模块-解析dom结构
