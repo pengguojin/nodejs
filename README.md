@@ -122,23 +122,23 @@ req.end();
 有了解决办法，就一步步来        
 
 - 1、先引入https模块，然后通过判断请求的url判断使用http还是https
-```javascript
-const http=require('http');
-const https=require('https');
-const urllib=require('url');
-let httpMod=null;
-// 很简单，不解析
-var url = 'http://www.baidu.com';
-// 通过url模块，解析url地址
-let urlObj = urllib.parse(url);
-if (urlObj.protocol == 'http:') {
-    httpMod = http;
-}else if (urlObj.protocol=='https:') {
-    httpMod = https;
-} else {
-    throw new Error(`协议无法识别: ${urlObj.protocol}`);
-}
-```     
+    ```javascript
+    const http=require('http');
+    const https=require('https');
+    const urllib=require('url');
+    let httpMod=null;
+    /*很简单，不解析*/
+    var url = 'http://www.baidu.com';
+    /*通过url模块，解析url地址*/
+    let urlObj = urllib.parse(url);
+    if (urlObj.protocol == 'http:') {
+        httpMod = http;
+    }else if (urlObj.protocol=='https:') {
+        httpMod = https;
+    } else {
+        throw new Error(`协议无法识别: ${urlObj.protocol}`);
+    }
+    ```     
 
 - 2、在http的request方法，有一个参数是可以传入请求头信息的，改写下，如下：
     ```javascript
