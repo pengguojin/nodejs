@@ -2,7 +2,7 @@
 
 #### 项目介绍
 使用node原生模块+jsdom/cheerio模块，实现http和https通用的爬虫工具       
-目录real不定时更新爬成功的网站      
+目录[real](https://gitee.com/pengguojin/node_spider/tree/master/real)不定时更新爬成功的网站      
 目录libs是封装好的请求方法
 
 #### 软件架构      
